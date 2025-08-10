@@ -1,7 +1,7 @@
 # Use root/example as user/password credentials
 
 services:
-  mongo:
+  mongo-test:
     image: mongo:latest
     restart: always
     environment:
@@ -12,7 +12,7 @@ services:
     volumes:
       - ./mongo-test:/data/db
 
-  postgres-db:
+  postgres-db-test:
     image: postgres:16.2
     restart: always
     environment:

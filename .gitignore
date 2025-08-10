@@ -5,3 +5,6 @@ logs/
 mongo/
 postgres/
 /src/generated/prisma
+coverage
+mongo-test
+postgres-test

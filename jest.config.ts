@@ -107,11 +107,11 @@ const config: Config = {
   preset: "ts-jest",
 
   // Global configuration for ts-jest
-  globals: {
-    "ts-jest": {
-      tsconfig: "tsconfig.test.json",
-    },
-  },
+  // globals: {
+  //   "ts-jest": {
+  //     tsconfig: "tsconfig.json",
+  //   },
+  // },
 
   // Run tests from one or more projects
   // projects: undefined,
