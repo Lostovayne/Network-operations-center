@@ -4,3 +4,4 @@ logs/
 .env
 mongo/
 postgres/
+/src/generated/prisma

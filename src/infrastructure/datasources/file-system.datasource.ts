@@ -26,8 +26,8 @@ export class FileSystemDataSource implements LogDatasource {
 
   async saveLog(newLog: LogEntity): Promise<void> {
     fs.appendFileSync(this.allLogsPath, `${JSON.stringify(newLog)}\n`);
+    console.log("FileSystemDataSource: Log saved", newLog.message);
     if (newLog.level === LogSeverityLevel.low) return;
-
     if (newLog.level === LogSeverityLevel.medium) {
       fs.appendFileSync(this.mediumLogsPath, `${JSON.stringify(newLog)}\n`);
     } else {
