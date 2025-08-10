@@ -1,0 +1,29 @@
+{
+  "name": "noc-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@types/nodemailer": "^6.4.17",
+    "mongoose": "^8.17.1",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "cron": "^4.3.3",
+    "dotenv": "^17.2.1",
+    "env-var": "7.2",
+    "nodemailer": "^7.0.5"
+  }
+}
