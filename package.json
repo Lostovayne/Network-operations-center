@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx  src/app.ts",
+    "dev": "tsx src/app.ts",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js",
     "docker:test": "docker compose -f docker-compose.test.yml --env-file .env.test up -d",

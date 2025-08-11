@@ -1,6 +1,6 @@
 {
   "exclude": ["node_modules", "dist"],
-  "include": ["src/**/*.test.ts", "src/**/*.spec.ts"],
+  "include": ["src"],
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
