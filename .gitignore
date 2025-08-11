@@ -2,8 +2,6 @@ dist/
 node_modules/
 logs/
 .env
-mongo/
-postgres/
 /src/generated/prisma
 coverage
 mongo-test

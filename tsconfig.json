@@ -51,7 +51,8 @@
       "@infrastructure/*": ["infrastructure/*"],
       "@application/*": ["application/*"],
       "@presentation/*": ["presentation/*"],
-      "@shared/*": ["shared/*"]
+      "@shared/*": ["shared/*"],
+      "@config/*": ["config/*"]
     }
   }
 }

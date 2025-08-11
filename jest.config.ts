@@ -92,7 +92,14 @@ const config: Config = {
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    "^@domain/(.*)$": "<rootDir>/src/domain/$1",
+    "^@infrastructure/(.*)$": "<rootDir>/src/infrastructure/$1",
+    "^@application/(.*)$": "<rootDir>/src/application/$1",
+    "^@presentation/(.*)$": "<rootDir>/src/presentation/$1",
+    "^@shared/(.*)$": "<rootDir>/src/shared/$1",
+    "^@config/(.*)$": "<rootDir>/src/config/$1",
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -113,6 +120,16 @@ const config: Config = {
   //   },
   // },
 
+  // Modern ts-jest configuration
+  transform: {
+    "^.+\\.tsx?$": [
+      "ts-jest",
+      {
+        tsconfig: "tsconfig.json",
+      },
+    ],
+  },
+
   // Run tests from one or more projects
   // projects: undefined,
 
@@ -132,7 +149,7 @@ const config: Config = {
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  // rootDir: undefined,
+  rootDir: "./",
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
