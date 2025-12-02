@@ -34,6 +34,6 @@
     "cron": "^4.3.3",
     "dotenv": "^17.2.1",
     "env-var": "7.2",
-    "nodemailer": "^7.0.7"
+    "nodemailer": "^7.0.11"
   }
 }
